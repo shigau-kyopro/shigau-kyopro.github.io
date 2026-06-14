@@ -10,17 +10,24 @@
     {% include head-custom.html %}
 	<style>
 		a {
-		  color: #4169e1;
-		  text-decoration: underline;
-		  text-underline-offset: 5px;
-		  text-decoration-thickness: 1px;
+			--link-color: #0017c1;
+			--link-color-visited: #8b008b;
+			--link-color-active: #a90000;
 
-		  &:hover {
-			text-decoration-thickness: 3px;
-		  }
-		  &:active {
-			color: #e14e41;
-		  }
+			color: var(--link-color);
+			text-decoration: underline;
+			text-underline-offset: 5px;
+			text-decoration-thickness: 1px;
+
+			&:visited {
+				color: var(--link-color-visited);
+			}
+			&:hover {
+				text-decoration-thickness: 3px;
+			}
+			&:active {
+				color: var(--link-color-active);
+			}
 		}
 	</style>
   </head>
